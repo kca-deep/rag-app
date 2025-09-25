@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__shadcn__get_project_registries",
+      "Bash(claude doctor)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "shadcn",
+    "playwright",
+    "sequential-thinking",
+    "context7"
+  ]
+}
