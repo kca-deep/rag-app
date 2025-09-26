@@ -21,20 +21,6 @@
         "-y",
         "@modelcontextprotocol/server-sequential-thinking"
       ]
-    },
-    "supabase": {
-      "command": "cmd",
-      "args": [
-        "/c",
-        "pnpm",
-        "dlx",
-        "@supabase/mcp-server-supabase",
-        "--read-only",
-        "--project-ref=pzfjwvmqwlgzzcdkqseo"
-      ],
-      "env": {
-        "SUPABASE_ACCESS_TOKEN": "sbp_08e96e977122160c1799c8f1720e53b422d70eb7"
-      }
     }
   }
 }

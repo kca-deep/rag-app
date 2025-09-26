@@ -12,45 +12,45 @@ RAG 파이프라인 운영에 필요한 모든 데이터베이스 환경과 외�
 ## 체크리스트
 
 ### Phase 1: 환경변수 및 설정 관리
-- [ ] .env 파일 구조 설계
-- [ ] 환경별 설정 파일 분리 (.env.local, .env.production)
-- [ ] 환경변수 유효성 검증 스키마 구현
-- [ ] 민감 정보 암호화 설정
-- [ ] 환경변수 타입 정의 (TypeScript)
-- [ ] .env.example 파일 생성
+- [x] .env 파일 구조 설계
+- [x] 환경별 설정 파일 분리 (.env.local, .env.production)
+- [x] 환경변수 유효성 검증 스키마 구현
+- [x] 민감 정보 암호화 설정
+- [x] 환경변수 타입 정의 (TypeScript)
+- [x] .env.example 파일 생성
 
 ### Phase 2: SQLite 데이터베이스 설정
-- [ ] SQLite 데이터베이스 파일 위치 설정
-- [ ] 연결 풀 설정 (connection pooling)
-- [ ] WAL 모드 활성화 (성능 최적화)
-- [ ] 프라그마 설정 (journal_mode, synchronous, cache_size)
-- [ ] 백업 전략 구현
-- [ ] 데이터베이스 잠금 처리 로직
+- [x] SQLite 데이터베이스 파일 위치 설정
+- [x] 연결 풀 설정 (connection pooling)
+- [x] WAL 모드 활성화 (성능 최적화)
+- [x] 프라그마 설정 (journal_mode, synchronous, cache_size)
+- [x] 백업 전략 구현
+- [x] 데이터베이스 잠금 처리 로직
 
 ### Phase 3: SQLite 스키마 구현
-- [ ] **collections 테이블**
-  - [ ] 기본 필드 구현
-  - [ ] 인덱스 설정
-  - [ ] 제약조건 적용
-- [ ] **documents 테이블**
-  - [ ] 메타데이터 필드 구현
-  - [ ] 파일 해시 유니크 제약
-  - [ ] 외래키 관계 설정
-- [ ] **document_chunks 테이블**
-  - [ ] 청크 텍스트 저장 구조
-  - [ ] Milvus ID 매핑 필드
-  - [ ] 복합 인덱스 설정
-- [ ] **API 키 관리 테이블들**
-  - [ ] api_keys 테이블 구현
-  - [ ] api_key_permissions 테이블 구현
-  - [ ] 해시 기반 보안 구현
-- [ ] **사용량 추적 테이블**
-  - [ ] api_usage_logs 구현
-  - [ ] 파티셔닝 전략 고려
-- [ ] **동기화 관리 테이블**
-  - [ ] sync_operations 테이블
-  - [ ] job_queue 테이블
-  - [ ] 재시도 로직 지원
+- [x] **collections 테이블**
+  - [x] 기본 필드 구현
+  - [x] 인덱스 설정
+  - [x] 제약조건 적용
+- [x] **documents 테이블**
+  - [x] 메타데이터 필드 구현
+  - [x] 파일 해시 유니크 제약
+  - [x] 외래키 관계 설정
+- [x] **document_chunks 테이블**
+  - [x] 청크 텍스트 저장 구조
+  - [x] Milvus ID 매핑 필드
+  - [x] 복합 인덱스 설정
+- [x] **API 키 관리 테이블들**
+  - [x] api_keys 테이블 구현
+  - [x] api_key_permissions 테이블 구현
+  - [x] 해시 기반 보안 구현
+- [x] **사용량 추적 테이블**
+  - [x] api_usage_logs 구현
+  - [x] 파티셔닝 전략 고려
+- [x] **동기화 관리 테이블**
+  - [x] sync_operations 테이블
+  - [x] job_queue 테이블
+  - [x] 재시도 로직 지원
 
 ### Phase 4: SQLite 고급 기능
 - [ ] **RAG 최적화 테이블들**

@@ -119,31 +119,31 @@ const CollectionActions = ({ collection }) => {
 ## 체크리스트
 
 ### Phase 1: API 클라이언트 구성
-- [ ] **HTTP 클라이언트 설정**
-  - [ ] Axios 또는 Fetch 기반 API 클라이언트 구성
-  - [ ] 요청/응답 인터셉터 설정
-  - [ ] 에러 처리 및 재시도 로직 구현
-  - [ ] 타임아웃 및 취소 토큰 처리
-- [ ] **TypeScript 타입 정의**
-  - [ ] API 응답 스키마 타입 정의
-  - [ ] 요청 페이로드 타입 정의
-  - [ ] 에러 타입 정의
+- [x] **HTTP 클라이언트 설정**
+  - [x] Axios 또는 Fetch 기반 API 클라이언트 구성
+  - [x] 요청/응답 인터셉터 설정
+  - [x] 에러 처리 및 재시도 로직 구현
+  - [x] 타임아웃 및 취소 토큰 처리
+- [x] **TypeScript 타입 정의**
+  - [x] API 응답 스키마 타입 정의
+  - [x] 요청 페이로드 타입 정의
+  - [x] 에러 타입 정의
   - [ ] OpenAPI 스펙에서 타입 자동 생성
-- [ ] **API 엔드포인트 랩퍼 함수**
-  - [ ] Collection API 클라이언트 함수들
+- [x] **API 엔드포인트 랩퍼 함수**
+  - [x] Collection API 클라이언트 함수들
   - [ ] Document API 클라이언트 함수들
   - [ ] RAG 검색 API 클라이언트 함수들
   - [ ] API 키 관리 클라이언트 함수들
   - [ ] 시스템 관리 클라이언트 함수들
 
 ### Phase 2: 상태 관리 통합
-- [ ] **TanStack Query 설정**
-  - [ ] Query Client 구성 및 캐시 설정
-  - [ ] 쿼리 키 네이밍 전략 구현
-  - [ ] 캐시 무효화 전략 설정
-  - [ ] 백그라운드 refetch 설정
-- [ ] **커스텀 Hook 구현**
-  - [ ] useCollections - Collection 목록 관리
+- [x] **TanStack Query 설정**
+  - [x] Query Client 구성 및 캐시 설정
+  - [x] 쿼리 키 네이밍 전략 구현
+  - [x] 캐시 무효화 전략 설정
+  - [x] 백그라운드 refetch 설정
+- [x] **커스텀 Hook 구현**
+  - [x] useCollections - Collection 목록 관리
   - [ ] useDocuments - Document 관리
   - [ ] useSearch - 검색 기능
   - [ ] useApiKeys - API 키 관리
@@ -187,21 +187,21 @@ const CollectionActions = ({ collection }) => {
   - [ ] API 키 생성 기능 연동
 
 ### Phase 5: Collection 관리 페이지 통합
-- [ ] **Collection 목록 구현**
-  - [ ] 페이지네이션 및 정렬 연동
-  - [ ] 실시간 상태 업데이트
-  - [ ] 필터링 및 검색 기능 연동
+- [x] **Collection 목록 구현**
+  - [x] 페이지네이션 및 정렬 연동
+  - [x] 실시간 상태 업데이트
+  - [x] 필터링 및 검색 기능 연동
   - [ ] 배치 작업 (삭제, 내보내기) 구현
 - [ ] **Collection 상세 모달**
   - [ ] 기본 정보 수정 폼 연동
   - [ ] 문서 목록 동적 로딩
   - [ ] Milvus 통계 시각화
   - [ ] 동기화 상태 및 로그 표시
-- [ ] **Collection 생성/수정**
-  - [ ] 폼 유효성 검사 통합
-  - [ ] 실시간 중복 이름 체크
-  - [ ] 생성 진행상황 표시
-  - [ ] 성공/실패 피드백 구현
+- [x] **Collection 생성/수정**
+  - [x] 폼 유효성 검사 통합
+  - [x] 실시간 중복 이름 체크
+  - [x] 생성 진행상황 표시
+  - [x] 성공/실패 피드백 구현
 
 ### Phase 6: 문서 관리 페이지 통합
 - [ ] **문서 목록 및 필터링**
